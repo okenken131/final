@@ -10,12 +10,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>music-select(CURD)</title>
+    <title>爆丸課題</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<h2>楽曲一覧</h2>
-<a href="menu.php">メニューに戻る</a>
+<h2>爆丸一覧</h2>
+<a href="menu.php">メニューに戻る</a><br>
 <?php
     $pdo=new PDO($connect, USER, PASS);
     foreach ($pdo->query('select * from bakutech') as $row) {
