@@ -11,11 +11,12 @@
 <head>
     <meta charset="UTF-8">
     <title>爆丸課題</title>
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <h2>爆丸一覧</h2>
 <a href="menu.php">メニューに戻る</a><br>
+<table>
+<tr><th>爆丸ID</th><th>　爆丸名　</th><th>属性</th></tr>
 <?php
     $pdo=new PDO($connect, USER, PASS);
     foreach ($pdo->query('select * from bakutech') as $row) {
@@ -27,5 +28,6 @@
         echo '</tr>';
     }
 ?>
+</table>
 </body>
 </html>
